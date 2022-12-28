@@ -1,4 +1,4 @@
-# vue3-tmp
+# vue3-ts-template
 
 This template should help get you started developing with Vue 3 in Vite.
 
