@@ -1,23 +1,27 @@
-import { createRouter, createWebHistory } from "vue-router";
-import SideNavMain from "@/components/common/SideNavMain.vue";
-import NavBarBlur from "@/components/common/NavBarBlur.vue";
-import Main from "@/components/dashboard/Main.vue";
-import List from "@/components/user/List.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import MainContents from '@/components/common/MainContents.vue';
+import Home from '@/components/dashboard/Home.vue';
+import UserList from '@/components/user/UserList.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/",
-      name: "dashboard",
-      component: Main,
+      path: '/',
+      name: 'main',
+      component: MainContents,
       children: [
         {
-          path: "/user",
-          name: "user",
-          component: List
-        }
-      ]
+          path: '',
+          name: 'dashboard',
+          component: Home,
+        },
+        {
+          path: '/user',
+          name: 'user',
+          component: UserList,
+        },
+      ],
     },
   ],
 });

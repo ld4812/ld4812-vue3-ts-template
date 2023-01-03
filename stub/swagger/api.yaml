@@ -1,0 +1,35 @@
+openapi: "3.0.0"
+info:
+  title: stub
+  version: 2.0.0
+paths:
+  /user:
+    get:
+      operationId: user
+      summary: user
+      responses:
+        '200':
+          description: |-
+            200 response
+          content:
+            application/json:
+              examples:
+                sample:
+                  value:
+                    data:
+                      ユーザ一覧のデータを取得
+  /product:
+    get:
+      operationId: product
+      summary: product
+      responses:
+        '200':
+          description: |-
+            200 response
+          content:
+            application/json:
+              examples:
+                sample:
+                  value:
+                    data:
+                      商品一覧のデータを取得

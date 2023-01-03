@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="desktop"></div>
+<div id="main-menu">
+  <div id="main-menu__text" class="menu-text">Main Menu</div>
+</div>
+<div id="main-header">
+  <div id="main-header__login" class="menu-text">Login</div>
+</div>
+<div id="main-sidebar">
+  <div id="main-sidebar__user" class="menu-text sidebar-menu">User</div>
+  <div id="main-sidebar__product" class="menu-text sidebar-menu">Product</div>
+</div>
+<div id="main-contents">
+</div>
+<div id="main-footer">footer</div>
+
+</body>
+</html>
+<style>
+    body {
+        position: relative;
+        margin: auto;
+    }
+
+    .menu-text {
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-style: normal;
+    }
+
+    .sidebar-menu {
+        margin: 40px auto;
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+    }
+
+    .click-btn {
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    }
+
+    #desktop {
+        width: 1440px;
+        height: 1024px;
+        background-color: #FFFFFF;
+    }
+
+    #main-menu {
+        position: absolute;
+        width: 260px;
+        height: 77px;
+        left: 0;
+        top: 0;
+        background-color: #0094FF;
+    }
+
+    #main-menu__text {
+        margin: 13px auto;
+        width: 212px;
+        height: 51px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+    #main-header {
+        position: absolute;
+        width: 1645px;
+        height: 77px;
+        left: 260px;
+        top: 0;
+        display: flex;
+        background-color: #BBBBBB;
+    }
+
+    #main-header__login {
+        margin: auto 50px auto auto;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+    }
+
+    #main-sidebar {
+        position: absolute;
+        width: 260px;
+        height: 947px;
+        left: 0;
+        top: 77px;
+        background-color: #BBBBBB;
+    }
+
+    #main-footer {
+        position: absolute;
+        width: 1905px;
+        height: 40px;
+        background-color: #0094FF;
+        text-align: center;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+
+    #main-contents {
+        position: absolute;
+        top: 77px;
+        left: 260px;
+        width: 1645px;
+        height: 947px;
+    }
+</style>

@@ -1,9 +1,14 @@
 <script lang="ts" setup>
-import { RouterView } from "vue-router";
+import MainMenu from '@/views/MainMenu.vue';
+import MainHeader from '@/components/common/MainHeader.vue';
+import MainSidebar from '@/components/common/MainSidebar.vue';
+import MainFooter from '@/components/common/MainFooter.vue';
 </script>
 
 <template>
-  <div id="app">
-    <RouterView />
-  </div>
+  <MainMenu />
+  <MainHeader />
+  <MainSidebar />
+  <RouterView />
+  <MainFooter />
 </template>
