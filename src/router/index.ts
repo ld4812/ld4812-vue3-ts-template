@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import MainContents from '@/components/common/MainContents.vue';
-import Home from '@/components/dashboard/Home.vue';
 import UserList from '@/components/user/UserList.vue';
 
 const router = createRouter({
@@ -11,11 +10,6 @@ const router = createRouter({
       name: 'main',
       component: MainContents,
       children: [
-        {
-          path: '',
-          name: 'dashboard',
-          component: Home,
-        },
         {
           path: '/user',
           name: 'user',
