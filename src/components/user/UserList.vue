@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { inject, onMounted, reactive, ref } from 'vue';
 import { userStore } from '@/stores/user';
+import { MyException } from '@/exceptions/MyException';
 
 const us = userStore();
 
@@ -14,6 +15,9 @@ const userId = ref('');
 console.log(userId);
 const click = (): void => {
   state.counter++;
+};
+const clickError = (): void => {
+  throw new MyException();
 };
 onMounted(() => {
   console.log('setup mounted');
@@ -32,4 +36,6 @@ onMounted(() => {
   <div>user message: {{ us.message }}</div>
   <button @click="$repository.users.getAllUsers">global click</button>
   <div>user message: {{ us.message }}</div>
+  <button @click="clickError">click error</button>
+  <div>error message: error</div>
 </template>
